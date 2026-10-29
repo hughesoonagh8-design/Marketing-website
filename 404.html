@@ -33,14 +33,24 @@
  "@graph": []
 }
 </script>
+<style>
+.splash{position:fixed;inset:0;z-index:1000;background:#f6f4f0;display:flex;align-items:center;justify-content:center;pointer-events:none;animation:splash-out .45s ease .75s forwards}
+.splash svg{width:min(34vw,260px);height:auto;animation:splash-pop .75s cubic-bezier(.2,.8,.2,1) both}
+@keyframes splash-pop{from{transform:scale(.6);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes splash-out{to{opacity:0;visibility:hidden}}
+.seen .splash{display:none}
+@media (prefers-reduced-motion:reduce){.splash{animation-duration:.2s;animation-delay:.2s}.splash svg{animation:none}}
+</style>
+<script>try{if(localStorage.getItem('oonique-seen'))document.documentElement.classList.add('seen');else localStorage.setItem('oonique-seen','1')}catch(e){}</script>
 </head>
 <body>
+<div class="splash" aria-hidden="true"><svg viewBox="0 0 440 400" xmlns="http://www.w3.org/2000/svg"><ellipse cx="220" cy="200" rx="220" ry="200" fill="#222222"/><ellipse cx="220" cy="200" rx="62" ry="68" fill="#f6f4f0"/></svg></div>
 <a class="skip" href="#main">Skip to content</a>
 <div style="min-height:100vh">
   <header class="site-header">
     <div class="wrap">
       <a href="/" aria-label="Oonique home" style="display:flex">
-        <img src="/assets/logo-dark.png" alt="oonique" width="105" height="30" style="height:30px;width:auto;display:block">
+        <img src="/assets/logo-dark.png" alt="Oonique Event Marketing" width="105" height="30" style="height:30px;width:auto;display:block">
       </a>
       <nav aria-label="Main">
         <a class="nav-link" href="/">Home</a>
@@ -69,7 +79,7 @@
     <div class="wrap">
       <div style="display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;align-items:start">
         <div style="display:flex;flex-direction:column;gap:28px;max-width:420px">
-          <img src="/assets/logo-light.png" alt="oonique" width="220" height="63" style="width:220px;height:auto;display:block">
+          <img src="/assets/logo-light.png" alt="Oonique Event Marketing" width="220" height="63" style="width:220px;height:auto;display:block">
           <p style="margin:0;font-size:18px">From registrations to people in seats.</p>
         </div>
         <nav aria-label="Footer" style="display:flex;flex-direction:column;gap:12px">

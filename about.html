@@ -103,14 +103,24 @@
  ]
 }
 </script>
+<style>
+.splash{position:fixed;inset:0;z-index:1000;background:#f6f4f0;display:flex;align-items:center;justify-content:center;pointer-events:none;animation:splash-out .45s ease .75s forwards}
+.splash svg{width:min(34vw,260px);height:auto;animation:splash-pop .75s cubic-bezier(.2,.8,.2,1) both}
+@keyframes splash-pop{from{transform:scale(.6);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes splash-out{to{opacity:0;visibility:hidden}}
+.seen .splash{display:none}
+@media (prefers-reduced-motion:reduce){.splash{animation-duration:.2s;animation-delay:.2s}.splash svg{animation:none}}
+</style>
+<script>try{if(localStorage.getItem('oonique-seen'))document.documentElement.classList.add('seen');else localStorage.setItem('oonique-seen','1')}catch(e){}</script>
 </head>
 <body>
+<div class="splash" aria-hidden="true"><svg viewBox="0 0 440 400" xmlns="http://www.w3.org/2000/svg"><ellipse cx="220" cy="200" rx="220" ry="200" fill="#222222"/><ellipse cx="220" cy="200" rx="62" ry="68" fill="#f6f4f0"/></svg></div>
 <a class="skip" href="#main">Skip to content</a>
 <div style="min-height:100vh">
   <header class="site-header">
     <div class="wrap">
       <a href="/" aria-label="Oonique home" style="display:flex">
-        <img src="/assets/logo-dark.png" alt="oonique" width="105" height="30" style="height:30px;width:auto;display:block">
+        <img src="/assets/logo-dark.png" alt="Oonique Event Marketing" width="105" height="30" style="height:30px;width:auto;display:block">
       </a>
       <nav aria-label="Main">
         <a class="nav-link" href="/">Home</a>
@@ -129,7 +139,7 @@
       <p style="margin:28px 0 0;font-size:clamp(20px,2vw,28px);font-weight:600;letter-spacing:-0.015em">The "Oon" in Oonique. <span style="font-weight:400">Say it oo-NEEK.</span></p>
     </section>
     <section class="wrap" style="padding-bottom:clamp(72px,10vw,140px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:clamp(40px,6vw,96px);align-items:start">
-      <img src="/assets/oonagh-hughes.jpg" alt="Oonagh Hughes, founder of Oonique Event Marketing" width="1000" height="1241" style="width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center top;display:block">
+      <img src="/assets/oonagh-hughes.jpg" alt="Portrait of Oonagh Hughes, founder of Oonique Event Marketing, with long wavy blonde hair and a fringe, smiling with her arms folded to show several small tattoos, wearing a white T-shirt against a pale blue background" width="1000" height="1241" style="width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center top;display:block">
       <div style="display:flex;flex-direction:column;gap:22px;max-width:58ch">
         <p style="margin:0;font-size:clamp(21px,1.9vw,26px);line-height:1.38;font-weight:600;letter-spacing:-0.015em;text-wrap:pretty">I've been a freelance event marketer since 2022, working with names like Cvent, Reuters and Informa. My job has usually been the same: inherit marketing that's functional but flat, work out why it isn't landing, and fix it.</p>
         <p style="margin:0;text-wrap:pretty">My longest client has been Cvent. From 2023 to 2026 I led registration marketing for Cvent CONNECT Europe, their flagship European user conference. I rebuilt generic messaging into segmented campaigns that people actually responded to, and used the data to spot that free passes were filling registration lists but not rooms.</p>
@@ -228,7 +238,7 @@
     <div class="wrap">
       <div style="display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;align-items:start">
         <div style="display:flex;flex-direction:column;gap:28px;max-width:420px">
-          <img src="/assets/logo-light.png" alt="oonique" width="220" height="63" style="width:220px;height:auto;display:block">
+          <img src="/assets/logo-light.png" alt="Oonique Event Marketing" width="220" height="63" style="width:220px;height:auto;display:block">
           <p style="margin:0;font-size:18px">From registrations to people in seats.</p>
         </div>
         <nav aria-label="Footer" style="display:flex;flex-direction:column;gap:12px">
