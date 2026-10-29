@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oonique-marketing.com/sitemap.xml
