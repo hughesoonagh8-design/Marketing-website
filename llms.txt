@@ -9,6 +9,7 @@ Contact: hello@oonique-marketing.com · LinkedIn: https://www.linkedin.com/in/oo
 - [Home](https://oonique-marketing.com/): overview, results by year at Cvent CONNECT Europe, and services
 - [Services](https://oonique-marketing.com/services): event marketing audit; registration strategy; attendance and show-rate strategy; messaging and positioning; hands-on delivery
 - [Case studies](https://oonique-marketing.com/case-studies): segmented messaging (+148% email-driven registrations, 2025); cutting free passes (show rate 64% to 73%, registration revenue +27%, 2026)
+- [Insights](https://oonique-marketing.com/insights/): practical event marketing answers with real numbers, published weekly
 - [About](https://oonique-marketing.com/about): Oonagh Hughes's background, speaking and testimonials
 - [Contact](https://oonique-marketing.com/contact): enquiry form
 
@@ -26,3 +27,7 @@ Contact: hello@oonique-marketing.com · LinkedIn: https://www.linkedin.com/in/oo
 - Nov 2024: Elevate Your Event Registration: Learn From the Experts Behind Cvent CONNECT Europe (Cvent CONNECT Europe 2024, Conference session)
 - Oct 2024: Unveiling Cvent CONNECT Europe 2024 (Webinar, Co-host)
 - Aug 2024: Get Smart: AI Tools Essential for Planning Events (Webinar, Speaker)
+
+## Insights
+
+- [How do you get under the skin of each event audience segment?](https://oonique-marketing.com/insights/segment-event-marketing-emails) (2026-11-03): Splitting the list is easy. Knowing what to say to each segment takes conversations and show data, not just AI.
