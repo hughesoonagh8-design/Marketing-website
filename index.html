@@ -200,13 +200,7 @@
       <nav aria-label="Main">
         <a class="nav-link" href="/" aria-current="page">Home</a>
         <a class="nav-link" href="/services">Services</a>
-        <details class="nav-menu">
-          <summary class="nav-link">Resources</summary>
-          <div class="nav-panel">
-            <a href="/case-studies"><strong>Case studies</strong><span>Results from Cvent CONNECT Europe</span></a>
-            <a href="/insights/"><strong>Insights</strong><span>Practical answers, real numbers</span></a>
-          </div>
-        </details>
+        <a class="nav-link" href="/case-studies">Case studies</a>
         <a class="nav-link" href="/about">About</a>
         <a class="btn btn-primary nav-cta" href="/contact">Book a call</a>
       </nav>
@@ -337,7 +331,6 @@
           <a class="foot-link" href="/">Home</a>
           <a class="foot-link" href="/services">Services</a>
           <a class="foot-link" href="/case-studies">Case studies</a>
-          <a class="foot-link" href="/insights/">Insights</a>
           <a class="foot-link" href="/about">About</a>
           <a class="foot-link" href="/contact">Book a call</a>
           <a class="foot-link" href="https://www.linkedin.com/in/oonagh-hughes/" target="_blank" rel="noopener me">LinkedIn ↗</a>
@@ -350,12 +343,5 @@
     </div>
   </footer>
 </div>
-<script>
-(function(){
-  var m=document.querySelector('.nav-menu'); if(!m) return;
-  document.addEventListener('click',function(e){ if(m.open && !m.contains(e.target)) m.open=false; });
-  document.addEventListener('keydown',function(e){ if(e.key==='Escape' && m.open){ m.open=false; m.querySelector('summary').focus(); } });
-})();
-</script>
 </body>
 </html>
